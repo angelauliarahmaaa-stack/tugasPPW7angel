@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukla Angel's - Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .catalog-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .catalog-table th,
+        .catalog-table td {
+            padding: 10px;
+            border: 1px solid #d6c7ae;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .product-image-cell {
+            width: 120px;
+        }
+
+        .product-img {
+            display: block;
+            width: 100px;
+            height: 80px;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+
+        @media (max-width: 700px) {
+            #menu-katalog {
+                overflow-x: auto;
+            }
+
+            .catalog-table {
+                min-width: 760px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Logo -->
+    <header class="header-container" id="beranda">
+        <img src="LOGO.jpg" alt="Logo Lukla Angel's" class="site-logo">
+        <h1 class="site-title">Lukla Angel's</h1>
+        <p class="site-subtitle">Best Restaurant In Jakarta - Fine Dining Hanya Rp 1.500.000</p>
+    </header>
+
+    <!-- Menu Navigasi -->
+    <nav>
+        <a href="#beranda">Beranda</a> | 
+        <a href="#tentang-kami">Tentang Kami</a> | 
+        <a href="#menu-katalog">Menu Restaurant</a> | 
+        <a href="#keunggulan">Keunggulan</a> | 
+        <a href="#form-reservasi">Form Reservasi</a> | 
+        <a href="#hubungi-kami">Kontak</a>
+    </nav>
+
+    <!-- Section: Beranda / Welcome -->
+    <section>
+        <h2 class="section-title">Selamat Datang di Lukla Angel's</h2>
+        <p>Lukla Angel's menyajikan pengalaman kuliner eksklusif fine dining dengan sajian lengkap dari Appetizer, Main Course kelas atas, hingga Dessert manis yang disiapkan oleh chef profesional.</p>
+        <p class="highlight-text">★ Paket Lengkap Fine Dining Mewah Hanya Rp 1.500.000!</p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Section: Tentang Kami -->
+    <section id="tentang-kami">
+        <h2 class="section-title">Tentang Lukla Angel's</h2>
+        <p>Lukla Angel's adalah restoran Fine Dining terkemuka di Jakarta yang menghadirkan perpaduan rasa autentik, bahan-bahan premium import, serta suasana eksklusif. Kami berkomitmen untuk memberikan pengalaman kuliner kelas atas yang tak terlupakan bagi setiap tamu.</p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Section: Menu Restaurant (Katalog Lengkap dengan 25 Produk) -->
+    <section id="menu-katalog">
+        <h2 class="section-title">Katalog Detail Menu Lukla Angel's</h2>
+        <p>Daftar pilihan menu Fine Dining favorit yang tersedia dalam katalog eksklusif kami:</p>
+
+        <table class="catalog-table">
+            <thead>
+                <tr>
+                    <th>Gambar</th>
+                    <th>Nama & Kategori Menu</th>
+                    <th>Deskripsi Utama</th>
+                    <th>Kelengkapan / Pelengkap</th>
+                    <th>Kategori Menu</th>
+                </tr>
+            </thead>
+            <tbody id="menu-table-body">
+                <!-- Data akan dirender otomatis dari data.js atau statis di bawah ini -->
+                <tr>
+                    <td class="product-image-cell"><img src="mushroomsoup.jpg" alt="Mushroom Soup" class="product-img"></td>
+                    <td><strong>1. Mushroom Soup</strong><br><span style="color: #5f4627; font-size: 0.85rem; font-weight: bold;">[Appetizer]</span></td>
+                    <td>• Jamur Segar Pilihan<br>• Kuah Krim Lembut & Gurih<br>• Aroma Rempah Autentik</td>
+                    <td>• Warm Soup<br>• Garlic Bread Renyah</td>
+                    <td class="price-text">Appetizer</td>
+                </tr>
+                <tr>
+                    <td class="product-image-cell"><img src="ribeye.jpg" alt="Ribeye Steak" class="product-img"></td>
+                    <td><strong>2. Ribeye Steak</strong><br><span style="color: #5f4627; font-size: 0.85rem; font-weight: bold;">[Main Course 1]</span></td>
+                    <td>• Daging Sapi Pilihan Premium<br>• Tekstur Juicy & Rich Flavor<br>• Teknik Dipanggang Sempurna</td>
+                    <td>• Pilihan Saus Spesial<br>• Pilihan Level Kematangan</td>
+                    <td class="price-text">Main Course</td>
+                </tr>
+                <tr>
+                    <td class="product-image-cell"><img src="panseared.jpg" alt="Pan-Seared Salmon" class="product-img"></td>
+                    <td><strong>3. Pan-Seared Salmon</strong><br><span style="color: #5f4627; font-size: 0.85rem; font-weight: bold;">[Main Course 2]</span></td>
+                    <td>• Salmon Segar Import<br>• Kulit Crispy Daging Lembut<br>• Bumbu Pan-Seared Khas</td>
+                    <td>• Mashed Potato Lembut<br>• Fresh Lemon Sauce</td>
+                    <td class="price-text">Main Course</td>
+                </tr>
+                <tr>
+                    <td class="product-image-cell"><img src="seabass.jpg" alt="Pan-Seared Sea Bass" class="product-img"></td>
+                    <td><strong>4. Pan-Seared Sea Bass</strong><br><span style="color: #5f4627; font-size: 0.85rem; font-weight: bold;">[Main Course 3]</span></td>
+                    <td>• Ikan Kakap Putih Segar<br>• Daging Gurih & Halus<br>• Panggangan Pan-Seared</td>
+                    <td>• Veggies Side Dish<br>• Chef Special Dressing</td>
+                    <td class="price-text">Main Course</td>
+                </tr>
+                <tr>
+                    <td class="product-image-cell"><img src="cremebrulee.jpg" alt="Creme Brulee" class="product-img"></td>
+                    <td><strong>5. Creme Brulee</strong><br><span style="color: #5f4627; font-size: 0.85rem; font-weight: bold;">[Dessert]</span></td>
+                    <td>• Custard Vanila Lembut<br>• Lapisan Karamel Renyah<br>• Rasa Manis Pas & Creamy</td>
+                    <td>• Topping Fresh Berries<br>• Hiasan Mint</td>
+                    <td class="price-text">Dessert</td>
+                </tr>
+                <!-- 20 Menu Tambahan Baru -->
+                <tr><td class="product-image-cell"><img src="caesarsalad.jpg" alt="Caesar Salad" class="product-img"></td><td><strong>6. Caesar Salad</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Appetizer]</span></td><td>• Selada Romaine Segar<br>• Keju Parmesan Import</td><td>• Crouton Renyah<br>• Caesar Dressing</td><td class="price-text">Appetizer</td></tr>
+                <tr><td class="product-image-cell"><img src="classicbruschetta.jpg" alt="Classic Bruschetta" class="product-img"></td><td><strong>7. Classic Bruschetta</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Appetizer]</span></td><td>• Roti Baguette Panggang<br>• Tomat Segar & Basil</td><td>• Extra Virgin Olive Oil<br>• Balsamic Glaze</td><td class="price-text">Appetizer</td></tr>
+                <tr><td class="product-image-cell"><img src="frenchescargot.jpg" alt="French Escargot" class="product-img"></td><td><strong>8. French Escargot</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Appetizer]</span></td><td>• Siput Pilihan khas Prancis<br>• Garlic Herb Butter</td><td>• Warm Baguette Slices</td><td class="price-text">Appetizer</td></tr>
+                <tr><td class="product-image-cell"><img src="lobsterbisque.jpg" alt="Lobster Bisque" class="product-img"></td><td><strong>9. Lobster Bisque</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Appetizer]</span></td><td>• Sup Krim Lobster Kaya Rasa<br>• Sentuhan Brandy Halus</td><td>• Cream Swirl<br>• Chives</td><td class="price-text">Appetizer</td></tr>
+                <tr><td class="product-image-cell"><img src="wagyu-steak.jpg" alt="Wagyu A5 Steak" class="product-img"></td><td><strong>10. Wagyu A5 Steak</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Main Course]</span></td><td>• Daging Wagyu Jepang A5<br>• Lumer di Mulut (Melt in mouth)</td><td>• Truffle Mashed Potato<br>• Red Wine Sauce</td><td class="price-text">Main Course</td></tr>
+                <tr><td class="product-image-cell"><img src="duck-confit.jpg" alt="French Duck Confit" class="product-img"></td><td><strong>11. French Duck Confit</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Main Course]</span></td><td>• Paha Bebek Dimasak Sempurna<br>• Kulit Renyah Daging Lembut</td><td>• Baby Potatoes<br>• Orange Reduction</td><td class="price-text">Main Course</td></tr>
+                <tr><td class="product-image-cell"><img src="truffle-pasta.jpg" alt="Truffle Mushroom Pasta" class="product-img"></td><td><strong>12. Truffle Mushroom Pasta</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Main Course]</span></td><td>• Fettuccine Pasta Segar<br>• Minyak Truffle Hitam Premium</td><td>• Grated Parmesan<br>• Wild Mushrooms</td><td class="price-text">Main Course</td></tr>
+                <tr><td class="product-image-cell"><img src="lamb-chops.jpg" alt="Grilled Lamb Chops" class="product-img"></td><td><strong>13. Grilled Lamb Chops</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Main Course]</span></td><td>• Domba Muda Pilihan Import<br>• Tanpa Bau Prengus, Juicy</td><td>• Mint Chutney<br>• Roasted Vegetables</td><td class="price-text">Main Course</td></tr>
+                <tr><td class="product-image-cell"><img src="chicken-cordon.jpg" alt="Chicken Cordon Bleu" class="product-img"></td><td><strong>14. Chicken Cordon Bleu</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Main Course]</span></td><td>• Dada Ayam Isi Keju & Smoke Beef<br>• Tepung Roti Renyah Keemasan</td><td>• French Fries<br>• Creamy Mustard Sauce</td><td class="price-text">Main Course</td></tr>
+                <tr><td class="product-image-cell"><img src="seafood-paella.jpg" alt="Spanish Seafood Paella" class="product-img"></td><td><strong>15. Spanish Seafood Paella</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Main Course]</span></td><td>• Nasi Rempah Saffron Spanyol<br>• Aneka Seafood Segar Melimpah</td><td>• Lemon Wedges<br>• Fresh Parsley</td><td class="price-text">Main Course</td></tr>
+                <tr><td class="product-image-cell"><img src="lobster-thermidor.jpg" alt="Lobster Thermidor" class="product-img"></td><td><strong>16. Lobster Thermidor</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Main Course]</span></td><td>• Daging Lobster Panggang Keju<br>• Saus Béchamel Creamy Mewah</td><td>• Butter Rice<br>• Parsley Garnish</td><td class="price-text">Main Course</td></tr>
+                <tr><td class="product-image-cell"><img src="beef-bourguignon.jpg" alt="Beef Bourguignon" class="product-img"></td><td><strong>17. Beef Bourguignon</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Main Course]</span></td><td>• Stew Daging Sapi Khas Prancis<br>• Dimasak Lama dengan Red Wine</td><td>• Mashed Potato<br>• Glazed Carrots</td><td class="price-text">Main Course</td></tr>
+                <tr><td class="product-image-cell"><img src="vanilacotta.jpg" alt="Vanilla Panna Cotta" class="product-img"></td><td><strong>18. Vanilla Panna Cotta</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Dessert]</span></td><td>• Italian Pudding Lembut & Silky<br>• Ekstrak Vanila Asli Madagascar</td><td>• Strawberry Coulis<br>• Mint Leaves</td><td class="price-text">Dessert</td></tr>
+                <tr><td class="product-image-cell"><img src="classictiramisu.jpg" alt="Classic Tiramisu" class="product-img"></td><td><strong>19. Classic Tiramisu</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Dessert]</span></td><td>• Ladyfingers Rendaman Kopi<br>• Keju Mascarpone Lembut</td><td>• Cocoa Powder Dust<br>• Chocolate Stick</td><td class="price-text">Dessert</td></tr>
+                <tr><td class="product-image-cell"><img src="lava-cake.jpg" alt="Chocolate Lava Cake" class="product-img"></td><td><strong>20. Chocolate Lava Cake</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Dessert]</span></td><td>• Cake Cokelat Hangat Lumer<br>• Belgian Dark Chocolate Berkualitas</td><td>• Vanilla Ice Cream Scoop<br>• Berry Compote</td><td class="price-text">Dessert</td></tr>
+                <tr><td class="product-image-cell"><img src="applestrudel.jpg" alt="Apple Strudel" class="product-img"></td><td><strong>21. Apple Strudel</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Dessert]</span></td><td>• Pastry Renyah Berlapis-lapis<br>• Isian Apel Manis & Kayu Manis</td><td>• Warm Custard Sauce<br>• Icing Sugar</td><td class="price-text">Dessert</td></tr>
+                <tr><td class="product-image-cell"><img src="matcha-opera.jpg" alt="Matcha Opera Cake" class="product-img"></td><td><strong>22. Matcha Opera Cake</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Dessert]</span></td><td>• Sponge Cake Green Tea Jepang<br>• Lapisan Ganache Putih & Matcha</td><td>• Gold Leaf Flakes<br>• Fresh Berries</td><td class="price-text">Dessert</td></tr>
+                <tr><td class="product-image-cell"><img src="mocktail-blue.jpg" alt="Blue Lagoon Mocktail" class="product-img"></td><td><strong>23. Blue Lagoon Mocktail</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Beverage]</span></td><td>• Minuman Menyegarkan Biru<br>• Sirup Citrus & Soda Premium</td><td>• Lemon Slice<br>• Mint Sprig</td><td class="price-text">Beverage</td></tr>
+                <tr><td class="product-image-cell"><img src="lychee-tea.jpg" alt="Royal Lychee Tea" class="product-img"></td><td><strong>24. Royal Lychee Tea</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Beverage]</span></td><td>• Teh Hitam Pilihan Berkualitas<br>• Buah Leci Segar Manis</td><td>• Buah Leci Utuh<br>• Daun Mint</td><td class="price-text">Beverage</td></tr>
+                <tr><td class="product-image-cell"><img src="artisan-coffee.jpg" alt="Artisan Espresso/Coffee" class="product-img"></td><td><strong>25. Artisan Espresso</strong><br><span style="color: #5f4627; font-size: 0.85rem;">[Beverage]</span></td><td>• Biji Kopi Arabika Pilihan<br>• Diseduh Mesin Espresso Professional</td><td>• Artisanal Cookie<br>• Brown Sugar</td><td class="price-text">Beverage</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Section: Keunggulan -->
+    <section id="keunggulan">
+        <h2 class="section-title">Mengapa Memilih Lukla Angel's?</h2>
+        <ul class="feature-list">
+            <li><strong>Bahan Import & Segar:</strong> Menjamin rasa dan kualitas kuliner kelas atas untuk setiap hidangan.</li>
+            <li><strong>Suasana Eksklusif:</strong> Pemandangan kota yang nyaman dan romantis untuk momen spesial Anda.</li>
+            <li><strong>Pelayanan VVIP:</strong> Staf & pelayan yang ramah, cepat, dan sangat profesional.</li>
+            <li><strong>Penawaran Terbaik:</strong> Paket Fine Dining mewah lengkap hanya Rp 1.500.000.</li>
+            <li><strong>Reservasi Mudah:</strong> Proses pemesanan tempat fleksibel langsung terhubung ke layanan resmi kami.</li>
+        </ul>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Section: Form Reservasi -->
+    <section id="form-reservasi">
+        <h2 class="section-title">Formulir Reservasi Meja & Pemesanan</h2>
+        <p>Isi formulir di bawah ini untuk memesan meja dan memilih menu utama pilihan Anda:</p>
+
+        <form class="order-form">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp">Nomor WhatsApp:</label>
+                <input type="tel" id="whatsapp" placeholder="08xxxxxxxxxx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal">Tanggal Reservasi:</label>
+                <input type="date" id="tanggal" required>
+            </div>
+
+            <div class="form-group">
+                <label for="jam">Jam Kedatangan:</label>
+                <select id="jam">
+                    <option value="17:00">17.00 WIB</option>
+                    <option value="18:30">18.30 WIB</option>
+                    <option value="20:00">20.00 WIB</option>
+                    <option value="21:30">21.30 WIB</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tamu">Jumlah Tamu (Pax):</label>
+                <input type="number" id="tamu" min="1" value="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="maincourse">Pilihan Main Course:</label>
+                <select id="maincourse">
+                    <option value="Ribeye Steak">Main Course Ribeye Steak</option>
+                    <option value="Pan-Seared Salmon">Main Course Pan-Seared Salmon</option>
+                    <option value="Pan-Seared Sea Bass">Main Course Pan-Seared Sea Bass</option>
+                    <option value="Wagyu A5 Steak">Main Course Wagyu A5 Steak</option>
+                </select>
+            </div>
+
+            <div class="form-group" style="align-items: flex-start;">
+                <label for="catatan">Catatan / Request Khusus:</label>
+                <textarea id="catatan" placeholder="Tuliskan catatan khusus (misal: anniversary, tingkat kematangan steak, alergi, dll)..."></textarea>
+            </div>
+
+            <div class="form-buttons">
+                <a href="https://www.instagram.com/lukla.rooftop/" target="_blank" class="btn-submit">Kirim Reservasi</a>
+                <button type="reset" class="btn-reset">Reset Form</button>
+            </div>
+        </form>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Section: Hubungi Kami -->
+    <section id="hubungi-kami">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <ul class="feature-list" style="list-style-type: disc;">
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/lukla.rooftop/" target="_blank" style="color: #5f4627;">@lukla.rooftop</a></li>
+            <li><strong>Jam Operasional:</strong> Setiap Hari (17.00 - 23.00 WIB)</li>
+            <li><strong>Alamat Restoran:</strong> Jakarta</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="LOGO.jpg" alt="Logo Lukla Angel's">
+        </div>
+        <p>&copy; 2026 <strong>Lukla Angel's</strong>. Best Restaurant In Jakarta.</p>
+        <p style="font-size: 0.8rem; color: #5f4627;">Dibuat Murni Menggunakan Atribut HTML & CSS Layouting.</p>
+    </footer>
+
+    <!-- JavaScript Integrasi -->
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
